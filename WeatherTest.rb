@@ -1,3 +1,5 @@
+# /WeatherTest.rb
+
 require "http"
 
 # Hidden variables
@@ -11,4 +13,6 @@ raw = HTTP.get(Google_maps_url)
 
 require "json"
 
+parsed = JSON.parse(raw)
 
+pp parsed
